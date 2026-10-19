@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatiuwung EduMedia - Portal Pendidikan Tangerang</title>
+    <!-- Menggunakan Tailwind CSS CDN untuk tampilan modern & responsif -->
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVIGATION BAR -->
+    <header class="bg-blue-600 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wide">Jatiuwung <span class="text-yellow-300">EduMedia</span></h1>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#home" class="hover:text-yellow-300 transition">Beranda</a>
+                <a href="#direktori" class="hover:text-yellow-300 transition">Direktori Sekolah</a>
+                <a href="#berita" class="hover:text-yellow-300 transition">Kabar Edukasi</a>
+                <a href="#kontak" class="hover:text-yellow-300 transition">Hubungi Kami</a>
+            </nav>
+            <button class="md:hidden text-2xl" id="menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Pusat Informasi & Media Pendidikan Jatiuwung</h2>
+            <p class="text-lg md:text-xl mb-8 text-blue-100">Mendorong kemajuan literasi, akses sekolah gratis, dan ruang kreativitas pelajar di Kota Tangerang.</p>
+            <a href="#direktori" class="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-6 py-3 rounded-lg shadow-lg transition">Jelajahi Sekolah</a>
+        </div>
+    </section>
+
+    <!-- STATISTIK SINGKAT -->
+    <section class="container mx-auto px-6 -mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-yellow-400">
+            <h3 class="text-3xl font-bold text-blue-600">48+</h3>
+            <p class="text-gray-500 font-medium">Total Sarana Pendidikan</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-green-500">
+            <h3 class="text-3xl font-bold text-green-600">700+</h3>
+            <p class="text-gray-500 font-medium">Guru & Tenaga Pendidik</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-indigo-500">
+            <h3 class="text-3xl font-bold text-indigo-600">10.000+</h3>
+            <p class="text-gray-500 font-medium">Siswa Aktif</p>
+        </div>
+    </section>
+
+    <!-- DIREKTORI SEKOLAH POPULER -->
+    <section id="direktori" class="container mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Direktori Sekolah & Lembaga</h2>
+            <p class="text-gray-600">Akses profil singkat beberapa sekolah di wilayah Jatiuwung</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Sekolah 1 -->
+            <div class="bg-white rounded-xl shadow overflow-hidden hover:shadow-xl transition">
+                <div class="bg-blue-100 p-4 text-center text-blue-600 font-bold">SMK</div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-2">SMK Negeri 8 Tangerang</h4>
+                    <p class="text-gray-600 text-sm mb-4">Fokus Keahlian Elektronika & Ketenagalistrikan. Terakreditasi A.</p>
+                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded font-semibold">Negeri</span>
+                </div>
+            </div>
+            <!-- Sekolah 2 -->
+            <div class="bg-white rounded-xl shadow overflow-hidden hover:shadow-xl transition">
+                <div class="bg-green-100 p-4 text-center text-green-600 font-bold">SMA / MA</div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-2">SMAN 11 Tangerang</h4>
+                    <p class="text-gray-600 text-sm mb-4">Sekolah Menengah Atas Negeri utama di kawasan Jatake, Jatiuwung.</p>
+                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded font-semibold">Negeri</span>
+                </div>
+            </div>
+            <!-- Sekolah 3 -->
+            <div class="bg-white rounded-xl shadow overflow-hidden hover:shadow-xl transition">
+                <div class="bg-purple-100 p-4 text-center text-purple-600 font-bold">Kesetaraan</div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-2">PKBM Insan Mandiri</h4>
+                    <p class="text-gray-600 text-sm mb-4">Menyelenggarakan program belajar Paket A, B, dan C bagi masyarakat.</p>
+                    <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded font-semibold">Swasta / Nonformal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KABAR EDUKASI / BERITA -->
+    <section id="berita" class="bg-gray-100 py-16 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Kabar Edukasi Terkini</h2>
+                <p class="text-gray-600">Berita seputar kebijakan dan kegiatan pendidikan lokal</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <article class="bg-white p-6 rounded-lg shadow">
+                    <span class="text-sm text-blue-600 font-bold">Program Pemkot</span>
+                    <h4 class="font-bold text-xl mt-2 mb-3 hover:text-blue-600 cursor-pointer">Sinergi Penanganan Anak Tidak Sekolah di Jatiuwung</h4>
+                    <p class="text-gray-600 text-sm">Pemerintah mengoptimalkan beasiswa Tangerang Cerdas untuk mempermudah akses pendidikan warga.</p>
+                </article>
+                <article class="bg-white p-6 rounded-lg shadow">
+                    <span class="text-sm text-amber-600 font-bold">Tips Belajar</span>
+                    <h4 class="font-bold text-xl mt-2 mb-3 hover:text-blue-600 cursor-pointer">Cara Efektif Memilih Jurusan SMK untuk Lulusan SMP</h4>
+                    <p class="text-gray-600 text-sm">Panduan bagi calon siswa baru di Jatiuwung dalam memilih jurusan kejuruan teknik maupun non-teknik.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak" class="bg-gray-900 text-gray-400 py-12 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-white text-lg font-bold mb-2">Jatiuwung EduMedia</h3>
+                <p class="text-sm">Media Informasi Komunitas Pendidikan Jatiuwung, Kota Tangerang.</p>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-white">Tentang Kami</a>
+                <a href="#" class="hover:text-white">Hubungi Dinas Pendidikan</a>
+                <a href="#" class="hover:text-white">Kebijakan Privasi</a>
+            </div>
+        </div>
+        <div class="text-center text-xs mt-8 pt-8 border-t border-gray-800">
+            &copy; 2026 Jatiuwung EduMedia. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
